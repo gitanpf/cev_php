@@ -14,8 +14,8 @@
     </header>
     <main>
         <?php 
-            $nome = $GET_["nome"]; 
-            $sobrenome = $GET_["sobrenome"]; 
+            $nome = $GET_["nome"] ?? "Sem nome"; 
+            $sobrenome = $GET_["sobrenome"] ?? "Sem sobrenome"; 
             echo "Olá, $nome $sobrenome! Seja bem-vindo(a)!";
         ?>
         <p><a href="javascript:history.go(-1)">Voltar</a></p>
